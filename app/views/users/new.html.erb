@@ -1,0 +1,9 @@
+<%= form_for @user do |form| -%>
+  <%= form.cktext_area :name, :value => 'Default value', :id => 'user-name' %>
+  
+  <hr />
+
+  <%= cktext_area :user, :email, :cols => 40, :ckeditor => {:uiColor => '#AADC6E', :toolbar => 'mini'} %>  
+
+  <%= form.submit %>
+<% end -%>
